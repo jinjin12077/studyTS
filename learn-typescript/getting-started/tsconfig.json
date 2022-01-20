@@ -1,0 +1,10 @@
+{
+    "compulerOptions": {    // 컴파일할 때 설정값
+        "allowJs" : true,
+        "checkJs" : true,
+        "noImplicitAny": true
+    }
+}
+
+// tsc 공식문서
+// https://www.typescriptlang.org/docs/handbook/compiler-options.html
