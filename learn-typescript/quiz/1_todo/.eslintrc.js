@@ -21,6 +21,9 @@ module.exports = {
         printWidth: 80,
         bracketSpacing: true,
         arrowParens: 'avoid',
+
+        // eslint (prettier/prettier) 에러
+        endOfLine: 'auto',
       },
     ],
     '@typescript-eslint/no-explicit-any': 'off',
@@ -29,4 +32,6 @@ module.exports = {
   parserOptions: {
     parser: '@typescript-eslint/parser',
   },
+
+
 };
