@@ -1,8 +1,8 @@
 {
-  "compilerOptions": {
+  "compilerOptions": {    // TS파일 => 자바스크립트 파일로 컴파일하는 과정의 설정
     "allowJs": true,
     "checkJs": true,
-    "noImplicitAny": false
+    "noImplicitAny": true
   },
   "include": ["./src/**/*"]
 }
