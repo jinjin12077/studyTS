@@ -29,3 +29,24 @@ sum = function(a: number, b: number): number{
     return a + b;
 }
     
+// 인덱싱
+interface StringArray{
+    [index: number]: string;
+}
+
+var arr: StringArray = ['a','b','c'];
+// arr[0] = 10;        // 괄호 안에 index: string 값으로 배열에 접근할 수 있다.
+                    // 인터페이스 StringArray에 보면 넣을 수 있는 값이 string 밖에 안됨.
+
+// 딕셔너리 패턴
+interface StringRegexDictionary{
+    [key: string]: RegExp;       // RegExp = '정규표현식'의 약오
+}
+
+var obj: StringRegexDictionary = {
+    // sth: /abc/,     // 정규식 표현 /ab+c/
+    cssFile: 'css'
+}
+
+
+
