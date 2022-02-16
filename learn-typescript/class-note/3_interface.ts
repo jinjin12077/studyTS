@@ -45,7 +45,27 @@ interface StringRegexDictionary{
 
 var obj: StringRegexDictionary = {
     // sth: /abc/,     // 정규식 표현 /ab+c/
-    cssFile: 'css'
+    cssFile: /\.css$/,  // css 파일 전부 가져오기
+    jsFile: /\.js$/     // js 파일 전부 가져오기
+}
+obj['cssFile'] = 'a';       // 정규식 표현이 와야되는데 string이 와서 에러남
+
+Object.keys(obj).forEach(function(value){ });
+
+// 인터페이스 확장
+interface Person {
+    name: string;
+    age: number;
+}
+
+interface Developer extends Person {
+    langage: string;
+}
+
+var captain: Developer = {
+    langage : 'ts',
+    age : 100,
+    name: '캡틴'
 }
 
 

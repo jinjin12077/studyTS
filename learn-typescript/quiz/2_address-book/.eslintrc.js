@@ -21,10 +21,13 @@ module.exports = {
         printWidth: 80,
         bracketSpacing: true,
         arrowParens: 'avoid',
+
+        // eslint (prettier/prettier) 에러
+        endOfLine: 'auto',
       },
     ],
-    '@typescript-eslint/no-explicit-any': 'off',
-    "@typescript-eslint/explicit-function-return-type": 'off',
+    // '@typescript-eslint/no-explicit-any': 'off',
+    // "@typescript-eslint/explicit-function-return-type": 'off',
     'prefer-const': 'off',
   },
   parserOptions: {
